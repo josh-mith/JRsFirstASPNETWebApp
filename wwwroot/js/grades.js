@@ -1,13 +1,11 @@
-﻿var submit = document.getElementById("submitButton");
-
-submit.addEventListener("click", function () {
+﻿$("#submitButton").click(function () {
 
     //Get grade values
-    var assignments = document.getElementById("assignments").value;
-    var groupProject = document.getElementById("groupProjects").value; 
-    var quizzes = document.getElementById("quizzes").value;
-    var exams = document.getElementById("exams").value;
-    var intex = document.getElementById("intex").value;
+    var assignments = $("#assignments").val();
+    var groupProject = $("#groupProjects").val();
+    var quizzes = $("#quizzes").val();
+    var exams = $("#exams").val();
+    var intex = $("#intex").val();
 
     //Grade weights
     var assignWeight = .5;
